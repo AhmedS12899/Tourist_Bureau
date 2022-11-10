@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculators</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/activities.css">
+    <link rel="stylesheet" href="css/navTemplate.css">
+</head>
+
+<body>
+    <!-- Created our Navbar with bootstrap -->
+    <header class="header ">
+        <nav class="navbar navbar-expand-md header-nav fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="main.html">DisneyLand Tourist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="activities.html">Activities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="category row">
+            <div class="col-sm-4">
+                <select class="form-select mb-3 " name="category" id="categoryField">
+
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <select class="form-select mb-3" name="activities" id="activitiesField"></select>
+            </div>
+            <div class="col-sm-4">
+                <p id="idField"></p>
+                <p id="descriptionField"></p>
+                <p id="locationField"></p>
+                <p id="priceField"></p>
+            </div>
+            <div class="col-sm-6" id="formField">
+                <label for="eTicket">PLEASE COMPLETE THE FORM TO PURCHASE A E-TICKET</label>
+                <form id="eTicket">
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="ticketAmount">
+                          <option selected>Number of Tickets</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      <div class="input-group mb-3">
+                        <label class="ticketLabel" for="credit">Enter Credit/Debit Card Number:</label>
+                        <input id="credit" type="text" class="form-control" placeholder="XXX" aria-label="First3" maxlength="3" required>
+                        <span class="input-group-text">---</span>
+                        <input type="text" class="form-control" placeholder="XXX" aria-label="next3" maxlength="3" required>
+                        <span class="input-group-text">---</span>
+                        <input type="text" class="form-control" placeholder="XXXX" aria-label="Last4" maxlength="4" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailField" placeholder="name@example.com" required>
+                      </div>
+                    <button type="submit" class="btn btn-primary" id="subBtn">Purchase</button>
+                    <button type="submit" class="btn btn-primary" id="resetBtn">Reset</button>
+                  </form>
+            </div>
+            <div class="col-sm-6">
+
+            </div>
+            <div class="col-sm-6">
+                <p id="receipt"></p>
+            </div>
+        </div>
+        <div class="animated row">
+            <section class="animated-grid">
+                <div class="card" style="background-image:url(images/disney1.jpg);"></div>
+                <div class="card" style="background-image:url('images/disney2.jpg');"></div>
+                <div class="card" style="background-image:url('images/disney3.webp');"></div>
+                <div class="card" style="background-image:url('images/disney4.jpg')"></div>
+                <div class="card" style="background-image:url('images/disney5.jpg');"></div>
+                <div class="card" style="background-image:url('images/disney6.jpg');"></div>
+                <div class="card card-wide" style="background-image:url('images/disney7.webp');"></div>
+                <div class="card" style="background-image:url('images/disney8.jpg');"></div>
+                <div class="card" style="background-image:url('images/disney9.jpg');"></div>
+                <div class="card" style="background-image:url('images/disney10.avif');"></div>
+                <div class="card" style="background-image:url('images/disney11.jpg');"></div>
+                <div class="card" style="background-image:url('images/disney12.jpg');"></div>
+                <div class="card" style="background-image:url('images/disneyz.webp');"></div>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/activities.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
